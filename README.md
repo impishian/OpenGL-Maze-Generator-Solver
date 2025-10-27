@@ -1,19 +1,15 @@
-# OpenGL-Maze-Generator-Solver
+# 🕹️ OpenGL-Maze-Generator-Solver
 
-A single-file, zero-dependency demo that
-creates a perfect maze with recursive back-tracking
-renders it in real-time using OpenGL 1.x / GLUT
-finds the shortest path via Breadth-First Search
-animates the solution step-by-step
+A single-file, zero-dependency demo that creates a perfect maze with recursive back-tracking renders it in real-time using OpenGL 1.x / GLUT finds the shortest path via Breadth-First Search animates the solution step-by-step.
 
 ## 📦 Build & Run
 
 | Platform | One-liner |
 |----------|-----------|
-| **macOS** (Xcode CLI tools required) | `clang++ maze.cpp -framework OpenGL -framework GLUT -std=c++11 -o maze && ./maze` |
-| **Linux** (Ubuntu / Debian) | `sudo apt install libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev && g++ maze.cpp -lGL -lGLU -lglut -std=c++11 -o maze && ./maze` |
-| **Windows** (MinGW-w64) | `g++ maze.cpp -lopengl32 -lglu32 -lfreeglut -std=c++11 -o maze.exe && maze.exe` |
-| **Windows** (Visual Studio) | `open Developer Command Prompt, link against freeglut (freeglut.lib opengl32.lib glu32.lib) and compile with cl /EHsc maze.cpp.` |
+| **macOS** (Xcode CLI tools required) | `clang++ maze.cc -framework OpenGL -framework GLUT -std=c++14 -o maze && ./maze` |
+| **Linux** (Ubuntu / Debian) | `sudo apt install libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev && g++ maze.cc -lGL -lGLU -lglut -std=c++14 -o maze && ./maze` |
+| **Windows** (MinGW-w64) | `g++ maze.cc -lopengl32 -lglu32 -lfreeglut -std=c++14 -o maze.exe && maze.exe` |
+| **Windows** (Visual Studio) | `open Developer Command Prompt, link against freeglut (freeglut.lib opengl32.lib glu32.lib) and compile with cl /EHsc maze.cc.` |
 
 ## 🎮 Controls
 |Key	|Action|
